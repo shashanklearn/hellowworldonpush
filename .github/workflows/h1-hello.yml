@@ -1,0 +1,12 @@
+name: H1 - Hello World
+
+on:
+  push:
+    paths-ignore:
+      - 'README.md'
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, world"
